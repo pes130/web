@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Material TIC2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/highlight.min.css">
+		<link rel="icon" href="../images/pablo.png">
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<h1>Unidad 5: Programación estructurada</h1>
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Pablo profe</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../lm/index.html">LMSGI</a></li>
+								<li><a href="#">TIC1</a></li>
+								<li><a href="../tic2/index.html">TIC2</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!--<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>-->
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="../lm/index.html">
+											<h3>LMSGI</h3>
+											<p>Lenguajes de Marcas y Sistemas de Gestión de la Información</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>TIC1</h3>
+											<p>Tecnologías de la Información y de la Comunicación I</p>
+										</a>
+									</li>
+									<li>
+										<a href="../tic2/index.html">
+											<h3>TIC2</h3>
+											<p>Tecnologías de la Información y de la Comunicación II</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+						<!--	<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+						-->
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a name="fragmento0">#0 - Hola Mundo!</a></h2>
+										<p>Primer programa en python. Guárdalo como <em>holamundo.py</em></p>
+									</div>
+								</header>
+								<pre><code class="python">
+print("Hola Mundo!")
+								</code></pre>	
+							</article>
+							<!-- Fin artículo --->
+
+
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a name="fragmento0">#1 - Saludar</a></h2>
+										<p>Introducción del concepto de input, variable y print con parámetros. Guárdalo como <em>saludar.py</em></p>
+									</div>
+								</header>
+								<h3>Pseudocódigo</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+
+# 2. Solicita el primero de los números al usuario y gúardalo en la variable numero1
+
+# 3. Solicita el segundo de los números al usuario y gúardalo en la variable numero2
+
+# 4. Muestra los 2 números introducidos y el resultado de sumarlos
+
+								</code></pre>	
+								<h3>Programa definitivo</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+print('Programa para calcular la suma de dos números')
+# 2. Solicita el primero de los números al usuario y gúardalo en la variable numero1
+numero1 = input('Escribe el primero de los números: ')
+# 3. Solicita el segundo de los números al usuario y gúardalo en la variable numero2
+numero2 = input('Escribe el segundo de los números: ')
+# 4. Muestra los 2 números introducidos y el resultado de sumarlos
+suma = eval(numero1) + eval(numero2)
+print('La suma de ',numero1,'y',numero2,'es',suma)					
+								</code></pre>	
+
+								<h3>Versión alternativa</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+print('Programa para calcular la suma de dos números')
+# 2. Solicita el primero de los números al usuario y gúardalo en la variable numero1
+numero1 = eval(input('Escribe el primero de los números: '))
+# 3. Solicita el segundo de los números al usuario y gúardalo en la variable numero2
+numero2 = eval(input('Escribe el segundo de los números: '))
+# 4. Muestra los 2 números introducidos y el resultado de sumarlos
+suma = numero1 + numero2
+print(numero1,'+',numero2,'=',suma)					
+								</code></pre>	
+							</article>
+							<!-- Fin artículo --->
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a name="fragmento2">#2 - Condicional de tipo I</a></h2>
+										<p>Estructuras que evalúan una condición, y en función de eso dirigen el flujo de ejecución por un sitio u otro. Guárdalo como <em>condicional1.py</em></p>
+									</div>
+								</header>
+								<h3>Pseudocódigo</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+print('Programa para saber si un número es múltiplo de 3')
+print('Si el número que escribes es divisible por 3, te mostraré')
+print('el resultado de dividir dicho número entre 3.')
+print('En caso contrario, no mostraré nada')
+
+# 2. Solicita al usuario un valor numérico
+
+# 3. Si el valor introducido es múltiplo de 3, mostrará el resultado de dividir dicho número entre 3.
+
+								</code></pre>	
+								<h3>En python...</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+print('Programa para saber si un número es múltiplo de 3')
+print('Si el número que escribes es divisible por 3, te mostraré')
+print('el resultado de dividir dicho número entre 3.')
+print('En caso contrario, no mostraré nada')
+
+# 2. Solicita al usuario un valor numérico
+n = input('Escribe un número: ')
+n = eval(n)
+
+# 3. Si el valor introducido es múltiplo de 3, mostrará el resultado de dividir dicho número entre 3.
+if n%3==0:
+	print('Enhorabuena, has escrito un número múltiplo de 3')
+	div = n/3
+	print('El resultado de dividir',n,'entre 3 es',div)				
+								</code></pre>	
+							</article>
+							<!-- Fin artículo --->
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a name="fragmento3">#3 - Condicional de tipo II (Si/Sino)</a></h2>
+										<p>En este caso, en caso de que no se cumpla la condición, haremos otra cosa. Guárdalo como <em>condicional2.py</em></p>
+									</div>
+								</header>
+								<h3>Pseudocódigo</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+print('Programa para saber si un número es múltiplo de 3')
+print('Si el número que escribes es divisible por 3, te mostraré')
+print('el resultado de dividir dicho número entre 3.')
+print('En caso contrario, se nos informará de ello y mostrará la división de dicho número entre 3')
+
+# 2. Solicita al usuario un valor numérico
+
+# 3. Si el valor introducido es múltiplo de 3, mostrará el resultado de dividir dicho número entre 3.
+#	 Sino, informaremos de ello al usuario y mostraremos el resultado de la división.
+
+								</code></pre>	
+								<h3>En python...</h3>
+								<pre><code class="python">
+# 1. Muestra mensaje indicando qué hace el programa
+print('Programa para saber si un número es múltiplo de 3')
+print('Si el número que escribes es divisible por 3, te mostraré')
+print('el resultado de dividir dicho número entre 3.')
+print('En caso contrario, se nos informará de ello y mostrará la división de dicho número entre 3')
+
+# 2. Solicita al usuario un valor numérico
+n = input('Escribe un número: ')
+n = eval(n)
+div = n/3
+
+# 3. Si el valor introducido es múltiplo de 3, mostrará el resultado de dividir dicho número entre 3.
+if n%3==0:
+	print('Enhorabuena, has escrito un número múltiplo de 3')
+	print('El resultado de dividir',n,'entre 3 es',div)	
+else:
+	print('El número que has escrito NO es un número múltiplo de 3')
+	print('Al dividir',n,'entre 3 se obtiene',div)
+	print('La división no es exacta.')		
+								</code></pre>	
+							</article>
+							<!-- Fin artículo --->
+
+							<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a name="fragmento3">#4 - Condicional de tipo III (Si/Sino si/sino)</a></h2>
+										<p>Programa que nos pida un número, y a continuación nos diga si dicho número es múltiplo de 2, en cuyo caso mostrará la división entre 2. Sólo en caso de que el número no sea múltiplo de 2, comprobará si es múltiplo de 3, y en caso afirmativo, mostrará la división de ese número entre 3. Si el número tampoco es múltiplo de 3, el programa comprobará si es múltiplo de 5, en cuyo caso mostrará la división del número introducido entre 3. Guárdalo como <em>condicional3.py</em></p>
+									</div>
+								</header>
+								<h3>Pseudocódigo</h3>
+								<pre><code class="python">
+#1. El programa mostrará unos mensajes informando lo que hace
+
+#2. Solicitará un valor numérico
+
+#3. Si el valor introducido es múltiplo de 2, nos mostrará el resultado de dividir dicho número entre 2.
+
+#4. Si el valor introducido no es múltiplo de 2, pero sí es múltiplo de 3, el programa nos informará de ello y mostrará la división de dicho número entre 3.
+
+#5. Sólo si el número introducido no es múltiplo de 2, ni de 3, pero sí lo es de 5, en dicho caso, nos mostrará el resultado de dividirlo entre 5.
+
+#6. Si el número introducido no es múltiplo de 2, ni de 3, ni de 5, el programa nos informará de dicha circunstancia.
+
+
+
+								</code></pre>	
+								<h3>En python...</h3>
+								<pre><code class="python">
+#1. El programa mostrará unos mensajes informando lo que hace
+print("Programa que te informa de si un número en divisible por 2, sino, si lo es por 3, sino, si lo es por 5")
+print("y si no, informará de ello también.")
+
+#2. Solicitará un valor numérico
+n=input("Escribe un número: ")
+n=eval(n)
+
+#3. Si el valor introducido es múltiplo de 2, nos mostrará el resultado de dividir dicho número entre 2.
+#4. Sino Si el valor introducido no es múltiplo de 2, pero sí es múltiplo de 3, el programa nos informará de ello y mostrará la división de dicho número entre 3.
+#5. Sino Sólo si el número introducido no es múltiplo de 2, ni de 3, pero sí lo es de 5, en dicho caso, nos mostrará el resultado de dividirlo entre 5.
+#6. Sino Si el número introducido no es múltiplo de 2, ni de 3, ni de 5, el programa nos informará de dicha circunstancia.
+if n%2==0:
+	div2=n/2
+	print("El número")
+
+
+								</code></pre>	
+							</article>
+							<!-- Fin artículo --->
+
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/highlight.min.js"></script>
+			<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>

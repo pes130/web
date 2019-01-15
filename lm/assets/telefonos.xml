@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<telefonos>
+	<telefono>
+		<marca>Xiaomi</marca>
+		<modelo>mi a1</modelo>
+		<pantalla>5,5"</pantalla>
+		<precio>199€</precio>
+		<dimensiones>155,4/75,8/7,3</dimensiones>
+	</telefono>
+	<telefono>
+		<marca>Xiaomi</marca>
+		<modelo>mi a2</modelo>
+		<pantalla>6"</pantalla>
+		<precio>249€</precio>
+		<dimensiones>75,5/158,9/7,3</dimensiones>
+	</telefono>
+	<telefono>
+		<marca>Xiaomi</marca>
+		<modelo>mi a2 lite</modelo>
+		<pantalla>5,8"</pantalla>
+		<precio>179€</precio>
+		<dimensiones>71,7/149,3/8,8</dimensiones>
+	</telefono>
+	<telefono>
+		<marca>Xiaomi</marca>
+		<modelo>mi a6</modelo>
+		<pantalla>5,2"</pantalla>
+		<precio>N/A</precio>
+		<dimensiones>145,2/70,5/7,5</dimensiones>
+	</telefono>
+</telefonos>

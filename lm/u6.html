@@ -199,8 +199,56 @@
 							</code></pre>	
 						</article>
 						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.1.2.1">3.1.2.1. Cardinalidad de un elemento. Operador +</a></h2>
+									<p>Ejemplo del operador <strong>+</strong></p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE personas [
+	&lt;!ELEMENT personas (nombre+)&gt;
+	&lt;!ELEMENT nombre (#PCDATA)&gt;
+]&gt;
+&lt;personas&gt;
+	&lt;nombre&gt;Ana&lt;/nombre&gt;
+	&lt;nombre&gt;Iker&lt;/nombre&gt;
+	&lt;nombre&gt;Elsa&lt;/nombre&gt;
+&lt;/personas&gt;				
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
 						
 
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.1.2.2">3.1.2.2. Cardinalidad de un elemento. Operador *</a></h2>
+									<p>Ejemplo del operador <strong>*</strong></p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE receta_de_cocina [
+	&lt;!ELEMENT receta_de_cocina (nombre, ingrediente*)&gt;
+	&lt;!ELEMENT nombre (#PCDATA)&gt;
+	&lt;!ELEMENT ingrediente (#PCDATA)&gt;
+]&gt;
+&lt;receta_de_cocina&gt;
+	&lt;nombre&gt;Tortilla de patatas&lt;/nombre&gt;
+	&lt;ingrediente&gt;Huevo&lt;/ingrediente&gt;
+	&lt;ingrediente&gt;Patata&lt;/ingrediente&gt;
+	&lt;ingrediente&gt;Aceite&lt;/ingrediente&gt;
+	&lt;ingrediente&gt;Sal&lt;/ingrediente&gt;
+&lt;/receta_de_cocina&gt;			
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
 					</div>
 
 				<!-- Footer -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personajes>
+	<personaje>
+		<nombre>Balrog</nombre>
+		<nacionalidad>EEUU</nacionalidad>
+		<altura>193</altura>
+		<peso>135</peso>
+		<grupo_sanguineo>A</grupo_sanguineo>
+		<datos_personales>
+			<aficion>bourbon</aficion>
+			<aficion>dinero</aficion>
+			<aversion>pescado</aversion>
+			<aversion>matemáticas</aversion>
+		</datos_personales>
+	</personaje>
+	<personaje>
+		<nombre>M. Bison</nombre>
+		<altura>180</altura>
+		<peso>80</peso>
+		<datos_personales>
+			<aficion>dominar el mundo</aficion>
+			<aversion>la música pop</aversion>
+			<aversion>desobediencia</aversion>
+		</datos_personales>
+	</personaje>
+	<personaje>
+		<nombre>Chun-Li</nombre>
+		<nacionalidad>China</nacionalidad>
+		<altura>173</altura>
+		<grupo_sanguineo>A</grupo_sanguineo>
+		<datos_personales>
+			<aficion>Su padre</aficion>
+			<aficion>Crepres</aficion>
+			<aficion>yogashi</aficion>
+		</datos_personales>
+	</personaje>
+	<personaje>
+		<nombre>Dhalsim</nombre>
+		<nacionalidad>India</nacionalidad>
+		<altura>176</altura>
+		<peso>70</peso>
+		<grupo_sanguineo>O</grupo_sanguineo>
+	</personaje>
+</personajes>

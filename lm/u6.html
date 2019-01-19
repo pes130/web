@@ -176,7 +176,6 @@
 							</code></pre>	
 						</article>
 						<!-- Fin artículo --->
-
 						<!-- Post -->
 						<article class="post">
 							<header>
@@ -249,6 +248,182 @@
 							</code></pre>	
 						</article>
 						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.1.1">3.2.1.1. Atributos. Valor por defecto</a></h2>
+									<p>Declaración de un atributo con un valor por defecto</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE deportistas [
+&lt;!ELEMENT deportistas (futbolista | pilotof1 | tenista)*&gt;
+&lt;!ELEMENT futbolista (#PCDATA)&gt;
+&lt;!ELEMENT pilotof1 (#PCDATA)&gt;
+	&lt;!ATTLIST pilotof1 pais CDATA "España"&gt;
+&lt;!ELEMENT tenista (#PCDATA)&gt;
+]&gt;
+&lt;deportistas&gt;
+ &lt;pilotof1 pais="Alemania"&gt;Sebastian Vettel&lt;/pilotof1&gt;
+ &lt;pilotof1&gt;Fernando Alonso&lt;/pilotof1&gt;
+ &lt;tenista&gt;Rafael Nadal&lt;/tenista&gt;
+&lt;/deportistas&gt;		
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.1.2">3.2.1.2. Atributos. Valores obligatorios</a></h2>
+									<p>Declaración de un atributo obligatorio</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE deportistas [
+&lt;!ELEMENT deportistas (futbolista | pilotof1 | tenista)*&gt;
+&lt;!ELEMENT futbolista (#PCDATA)&gt;
+&lt;!ELEMENT pilotof1 (#PCDATA)&gt;
+&lt;!ATTLIST pilotof1 pais CDATA "España"&gt;
+&lt;!ATTLIST pilotof1 escuderia CDATA #REQUIRED&gt;
+&lt;!ELEMENT tenista (#PCDATA)&gt;
+]&gt;
+&lt;deportistas&gt;
+ &lt;pilotof1 escuderia="ferrari" pais="Alemania"&gt;Vettel&lt;/pilotof1&gt;
+ &lt;tenista&gt;Rafael Nadal&lt;/tenista&gt;
+&lt;/deportistas&gt;	
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.1.3">3.2.1.3. Atributos. Valores opcionales</a></h2>
+									<p>Declaración de un atributo opcional</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE deportistas [
+&lt;!ELEMENT deportistas (futbolista | pilotof1 | tenista)*&gt;
+&lt;!ELEMENT futbolista (#PCDATA)&gt;
+&lt;!ELEMENT pilotof1 (#PCDATA)&gt;
+	&lt;!ATTLIST pilotof1 pais CDATA #IMPLIED&gt;
+&lt;!ELEMENT tenista (#PCDATA)&gt;
+]&gt;
+&lt;deportistas&gt;
+ &lt;pilotof1 pais="Alemania"&gt;Sebastian Vettel&lt;/pilotof1&gt;
+ &lt;pilotof1&gt;Fernando Alonso&lt;/pilotof1&gt;
+ &lt;tenista&gt;Rafael Nadal&lt;/tenista&gt;
+&lt;/deportistas&gt;		
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.1.4">3.2.1.4. Atributos. Valores fijos</a></h2>
+									<p>Declaración de un atributo con valor fijo</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE deportistas [
+&lt;!ELEMENT deportistas (futbolista | pilotof1 | tenista)*&gt;
+&lt;!ELEMENT futbolista (#PCDATA)&gt;
+&lt;!ELEMENT pilotof1 (#PCDATA)&gt;
+	&lt;!ATTLIST pilotof1 pais CDATA #IMPLIED&gt;
+	&lt;!ATTLIST pilotof1 activo CDATA #FIXED "si"&gt;
+&lt;!ELEMENT tenista (#PCDATA)&gt;
+]&gt;
+&lt;deportistas&gt;
+ &lt;pilotof1 activo="si"&gt;Sebastian Vettel&lt;/pilotof1&gt;
+ &lt;pilotof1&gt;Fernando Alonso&lt;/pilotof1&gt;
+ &lt;tenista&gt;Rafael Nadal&lt;/tenista&gt;
+&lt;/deportistas&gt;		
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.2.1">3.2.2.1. Tipos de atributos. CDATA</a></h2>
+									<p>Atributos de tipo CDATA: texto</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE peliculas [
+&lt;!ELEMENT peliculas (pelicula)*&gt;
+&lt;!ELEMENT pelicula (#PCDATA)&gt;
+	&lt;!ATTLIST pelicula pais CDATA #REQUIRED&gt;
+]&gt;
+&lt;peliculas&gt;
+ &lt;pelicula pais="EEUU"&gt;El padrino&lt;/pelicula&gt;
+ &lt;pelicula pais="Brasil"&gt;Ciudad de Dios&lt;/pelicula&gt;
+&lt;/peliculas&gt;			
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.2.2">3.2.2.2. Tipos de atributos. Enumerados</a></h2>
+									<p>Los atributos solo pueden tomar un valor procedente de una lista o enumerado</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE peliculas [
+&lt;!ELEMENT peliculas (pelicula)*&gt;
+&lt;!ELEMENT pelicula (#PCDATA)&gt;
+	&lt;!ATTLIST pelicula pais (ESP | EEUU | ITA | BRA) "ESP"&gt;
+]&gt;
+&lt;peliculas&gt;
+ &lt;pelicula pais="EEUU"&gt;El padrino&lt;/pelicula&gt;
+ &lt;pelicula pais="BRA"&gt;Ciudad de Dios&lt;/pelicula&gt;
+&lt;/peliculas&gt;			
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.2.3">3.2.2.3. Tipos de atributos. ID</a></h2>
+									<p>Sólo permiten un valor único para cada elemento</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE peliculas [
+&lt;!ELEMENT peliculas (pelicula)*&gt;
+&lt;!ELEMENT pelicula (#PCDATA)&gt;
+	&lt;!ATTLIST pelicula codigo ID #REQUIRED&gt;
+]&gt;
+&lt;peliculas&gt;
+ &lt;pelicula codigo="peli-00001"&gt;El padrino&lt;/pelicula&gt;
+ &lt;pelicula codigo="peli-00002"&gt;Ciudad de Dios&lt;/pelicula&gt;
+&lt;/peliculas&gt;			
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+
 					</div>
 
 				<!-- Footer -->

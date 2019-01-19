@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<academia>
+    <curso clave="py101" categoria="desarrollo">
+        <nombre>Introducción a la Programación con Python 3</nombre>
+        <requiere />
+        <version>2018</version>
+        <url>https://pythonista.mx/cursos/py101</url>
+        <temario>
+            <tema orden="1" nombre="Introducción al lenguaje Python" />
+            <tema orden="2" nombre="Palabras reservadas y espacio de nombres" />
+        </temario>
+    </curso>
+    <curso clave="py111" categoria="desarrollo">
+        <nombre>Introducción a la programación orientada a objetos con Python 3</nombre>
+        <requiere clave="py101"/>
+        <url>https://pythonista.mx/cursos/py111</url>
+        <temario>
+            <tema orden="1" nombre="Clases e instancias" />
+            <tema orden="2" nombre="Atributos y métodos" />
+            <tema orden="3" nombre="Atributos y métodos especiales" /> 
+        </temario>  
+    </curso>
+    <curso clave="py121" categoria="desarrollo">
+        <nombre>Introducción a manejo de datos con Python</nombre>
+        <requiere clave="py101 py111"/>
+        <version>2018</version>
+        <url>https://pythonista.mx/cursos/py121</url>
+        <temario>
+            <tema orden="1" nombre="Documentos XML" />
+            <tema orden="2" nombre="Gestión de estructura basadas en JSON" />
+        </temario>
+    </curso>
+     <curso clave="redes201" categoria="redes">
+        <nombre>Introducción a las redes</nombre>
+        <requiere />     
+        <version>2018</version>
+        <url>https://pythonista.mx/cursos/py181</url>
+        <temario>
+            <tema orden="1" nombre="Introducción al lenguaje Python" />
+            <tema orden="2" nombre="Palabras reservadas y espacio de nombres" />
+        </temario>
+    </curso>
+</academia>

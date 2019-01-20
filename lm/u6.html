@@ -423,7 +423,213 @@
 						</article>
 						<!-- Fin artículo --->
 
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.2.2.3">3.3. Ejemplo de entidades</a></h2>
+									<p>Son constantes de texto o macros</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE mensajes [
+	&lt;!ELEMENT mensajes (mensaje+)&gt;
+	&lt;!ELEMENT mensaje (from, to, cc*, cco*, subject, body)&gt;
+	&lt;!ELEMENT from (#PCDATA)&gt;
+	&lt;!ELEMENT to (#PCDATA)&gt;
+	&lt;!ELEMENT cc (#PCDATA)&gt;
+	&lt;!ELEMENT cco (#PCDATA)&gt;
+	&lt;!ELEMENT subject (#PCDATA)&gt;
+	&lt;!ELEMENT body (#PCDATA)&gt;
+	&lt;!ENTITY yo "pablo.profe.tic@gmail.com"&gt;
+	&lt;!ENTITY asunto_de_bienvenida "Le damos la bienvenida como proveedor"&gt;
+	&lt;!ENTITY mensaje_de_bienvenida "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed."&gt;
+]&gt;
+&lt;mensajes&gt;
+	&lt;mensaje&gt;
+		&lt;from&gt;&yo;&lt;/from&gt;
+		&lt;to&gt;cliente1@supermercado.com&lt;/to&gt;
+		&lt;cc&gt;info.cliente@supermercado.com&lt;/cc&gt;
+		&lt;subject&gt;&asunto_de_bienvenida;&lt;/subject&gt;
+		&lt;body&gt;
+			&mensaje_de_bienvenida;
+		&lt;/body&gt;
+	&lt;/mensaje&gt;
 
+	&lt;mensaje&gt;
+		&lt;from&gt;&yo;&lt;/from&gt;
+		&lt;to&gt;administrador@dia.es&lt;/to&gt;
+		&lt;subject&gt;&asunto_de_bienvenida;&lt;/subject&gt;
+		&lt;body&gt;
+			&mensaje_de_bienvenida;
+		&lt;/body&gt;
+	&lt;/mensaje&gt;
+
+	&lt;mensaje&gt;
+		&lt;from&gt;&yo;&lt;/from&gt;
+		&lt;to&gt;proveedores@mercadona.es&lt;/to&gt;
+		&lt;cco&gt;&lt;/cco&gt;
+		&lt;subject&gt;&asunto_de_bienvenida;&lt;/subject&gt;
+		&lt;body&gt;
+			&mensaje_de_bienvenida;
+		&lt;/body&gt;
+	&lt;/mensaje&gt;
+
+	&lt;mensaje&gt;
+		&lt;from&gt;&yo;&lt;/from&gt;
+		&lt;to&gt;cliente1@carrefour.com&lt;/to&gt;
+		&lt;cc&gt;info.cliente@carrefour.com&lt;/cc&gt;
+		&lt;cco&gt;&lt;/cco&gt;
+		&lt;subject&gt;&asunto_de_bienvenida;&lt;/subject&gt;
+		&lt;body&gt;
+			&mensaje_de_bienvenida;
+		&lt;/body&gt;
+	&lt;/mensaje&gt;
+
+&lt;/mensajes&gt;		
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.3.2.1">3.3.2 Entidades generales externas privadas</a></h2>
+									<p>El contenido de la entidad se encuentra en un fichero externo. Por motivos de seguridad, los navegadores lo deshabilitan. Prueba en la terminal con: <code>xmllint --noent archivo.xml</code></p>
+								</div>
+							</header>
+							<h3>archivo.xml</h3>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE textos [
+    &lt;!ELEMENT textos (texto)+&gt;
+    &lt;!ELEMENT texto (#PCDATA)&gt;
+    &lt;!ENTITY texto SYSTEM "cita.txt"&gt;
+]&gt;
+&lt;textos&gt;
+    &lt;texto&gt;
+        Galileo Galilei dijo: &texto;
+    &lt;/texto&gt;
+&lt;/textos&gt;		
+							</code></pre>	
+
+							<h3>cita.txt</h3>
+							<pre><code class="txt">
+En lo tocante a la ciencia, la autoridad de un millar no es superior al humilde razonamiento de una sola persona.
+							</code></pre>							
+						</article>
+						<!-- Fin artículo --->
+
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.3.3">3.3.3 Entidades paramétricas</a></h2>
+									<p>Pensadas para ser usadas dentro de un DTD (no XML). Una <a href="https://www.w3.org/TR/xml/#wfc-PEinInternalSubset" target="_blank">especificación XML</a> no permite hacer referencias a entidades paramétricas en <strong>DTDs internos</strong>. Por lo que hemos de declarar el DTD en un fichero externo.</p>
+								</div>
+							</header>
+							<h3>vehiculos.xml</h3>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE vehiculos SYSTEM "vehiculos.dtd"&gt;
+&lt;vehiculos&gt;
+	&lt;coche combustible="electrico"&gt;
+		&lt;motor&gt;1600cc&lt;/motor&gt;
+		&lt;ruedas&gt;4&lt;/ruedas&gt;
+		&lt;marca&gt;seat&lt;/marca&gt;
+		&lt;modelo&gt;león&lt;/modelo&gt;
+	&lt;/coche&gt;
+	&lt;moto combustible="gasolina"&gt;
+		&lt;motor&gt;600cc&lt;/motor&gt;
+		&lt;ruedas&gt;2&lt;/ruedas&gt;
+		&lt;marca&gt;kawasaki&lt;/marca&gt;
+		&lt;modelo&gt;ninja&lt;/modelo&gt;
+	&lt;/moto&gt;
+	&lt;camion combustible="diesel"&gt;
+		&lt;motor&gt;4000cc&lt;/motor&gt;
+		&lt;ruedas&gt;6&lt;/ruedas&gt;
+		&lt;marca&gt;pegaso&lt;/marca&gt;
+		&lt;modelo&gt;seiya&lt;/modelo&gt;
+	&lt;/camion&gt;
+&lt;/vehiculos&gt;	
+							</code></pre>	
+
+							<h3>DTD sin usar entidades paramétricas</h3>
+							<p>Guárdalo como <em>vehiculos.dtd</em></p>
+							<pre><code class="xml">
+&lt;!ELEMENT vehiculos (coche|moto|camion)*&gt;
+&lt;!ELEMENT coche (motor, ruedas, marca, modelo)&gt;
+&lt;!ATTLIST coche combustible (gasolina | diesel | electrico | gnc) #REQUIRED&gt;
+&lt;!ELEMENT moto (motor, ruedas, marca, modelo)&gt;
+&lt;!ATTLIST moto combustible (gasolina | diesel | electrico | gnc) #REQUIRED&gt;
+&lt;!ELEMENT camion (motor, ruedas, marca, modelo)&gt;
+&lt;!ATTLIST camion combustible (gasolina | diesel | electrico | gnc) #REQUIRED&gt;
+&lt;!ELEMENT motor (#PCDATA)&gt;
+&lt;!ELEMENT ruedas (#PCDATA)&gt;
+&lt;!ELEMENT marca (#PCDATA)&gt;
+&lt;!ELEMENT modelo (#PCDATA)&gt;
+							</code></pre>	
+
+							<h3>DTD usando entidades paramétricas</h3>
+							<p>Guárdalo como <em>vehiculos.dtd</em></p>
+							<pre><code class="xml">
+&lt;!ENTITY % caracteristicas "motor, ruedas, marca, modelo"&gt;
+&lt;!ENTITY % combustibles "(gasolina | diesel | electrico | gnc) #REQUIRED"
+&lt;!ELEMENT vehiculos (coche|moto|camion)*&gt;
+&lt;!ELEMENT coche (%caracteristicas;)&gt;
+&lt;!ATTLIST coche combustible %combustibles;&gt;
+&lt;!ELEMENT moto (%caracteristicas;)&gt;
+&lt;!ATTLIST moto combustible %combustibles;&gt;
+&lt;!ELEMENT camion (%caracteristicas;)&gt;
+&lt;!ATTLIST camion combustible %combustibles;&gt;
+&lt;!ELEMENT motor (#PCDATA)&gt;
+&lt;!ELEMENT ruedas (#PCDATA)&gt;
+&lt;!ELEMENT marca (#PCDATA)&gt;
+&lt;!ELEMENT modelo (#PCDATA)&gt;
+							</code></pre>							
+						</article>
+						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-3.4">3.4. Notaciones</a></h2>
+									<p>Crear atributos con valores complejos</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE documentos [
+	&lt;!NOTATION JPG SYSTEM "image/jpeg"&gt;
+	&lt;!NOTATION PNG SYSTEM "image/png"&gt;
+	&lt;!NOTATION DOC SYSTEM "application/doc"&gt;
+	&lt;!ELEMENT documentos (documento*)&gt;
+	&lt;!ELEMENT documento (titulo, tamanyo)&gt;
+	&lt;!ATTLIST documento tipo NOTATION (JPG|PNG|DOC) #REQUIRED&gt;
+	&lt;!ELEMENT titulo (#PCDATA)&gt;
+	&lt;!ELEMENT tamanyo (#PCDATA)&gt;
+]&gt;
+&lt;documentos&gt;
+	&lt;documento tipo="JPG"&gt;
+		&lt;titulo&gt;Imagen1.jpg&lt;/titulo&gt;
+		&lt;tamanyo&gt;200KB&lt;/tamanyo&gt;
+	&lt;/documento&gt;
+	&lt;documento tipo="PNG"&gt;
+		&lt;titulo&gt;resultados.png&lt;/titulo&gt;
+		&lt;tamanyo&gt;500KB&lt;/tamanyo&gt;
+	&lt;/documento&gt;
+	&lt;documento tipo="DOC"&gt;
+		&lt;titulo&gt;informe.doc&lt;/titulo&gt;
+		&lt;tamanyo&gt;250KB&lt;/tamanyo&gt;
+	&lt;/documento&gt;
+&lt;/documentos&gt;			
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
 					</div>
 
 				<!-- Footer -->
@@ -437,7 +643,6 @@
 						</ul>
 						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
 					</section>
-
 			</div>
 
 

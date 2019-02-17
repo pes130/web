@@ -658,6 +658,39 @@ En lo tocante a la ciencia, la autoridad de un millar no es superior al humilde 
 							</code></pre>	
 						</article>
 						<!-- Fin artículo --->
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a name="fragmento-4">Ejemplo patrones XSD</a></h2>
+									<p>Ejemplo para construir patrones con XSD</p>
+								</div>
+							</header>
+							<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;patrones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="expresiones-regulares.xsd"&gt;
+    &lt;!-- Que tenga 8 números --&gt;
+    &lt;patronA&gt;12345678&lt;/patronA&gt;
+    &lt;!-- Que tenga 5 letras mayúsculas --&gt;
+    &lt;patronB&gt;LMSGI&lt;/patronB&gt;
+    &lt;!-- Que tenga 3 letras mayúsculas seguido de 3 minúsculas --&gt;
+    &lt;patronC&gt;ABCdef&lt;/patronC&gt;
+    &lt;!-- que tenga 3 letras mayúsculas o minúsculas de la a a la d, seguido de 2 números --&gt;
+    &lt;patronD&gt;AdC99&lt;/patronD&gt;
+    &lt;!-- que tenga 3 números de 0 a 5 seguido de una letra minúscula desde a - d --&gt;
+    &lt;patronE&gt;123a&lt;/patronE&gt;
+    &lt;!-- tenga 3 bloque de 3 números separados por - --&gt;
+    &lt;patronF&gt;123-456-789&lt;/patronF&gt;
+    &lt;!-- empiece por una letra y tenga 2 números --&gt;
+    &lt;patronG&gt;c18&lt;/patronG&gt;
+&lt;/patrones&gt;	
+							</code></pre>	
+						</article>
+						<!-- Fin artículo --->
+
+
 					</div>
 
 				<!-- Footer -->

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+    <service>
+        <short>DNS</short>
+        <description>The Domain Name System (DNS) is used to provide and request host and domain names. Enable this option, if you plan to provide a domain name service (e.g. with bind).</description>
+        <port protocol="tcp" port="53"/>
+        <port protocol="udp" port="53"/>
+    </service>
+
+    <service>
+        <short>DHCP</short>
+        <description>This allows a DHCP server to accept messages from DHCP clients and relay agents.</description>
+        <port protocol="udp" port="67"/>
+    </service>
+    
+    <service>
+        <short>FTP</short>
+        <description>FTP is a protocol used for remote file transfer. If you plan to make your FTP server publicly available, enable this option. You need the vsftpd package installed for this option to be useful.</description>
+        <port protocol="tcp" port="21"/>
+        <module name="nf_conntrack_ftp"/>
+    </service>
+
+    <service>
+        <short>Network Time Protocol (NTP) Server</short>
+        <description>The Network Time Protocol (NTP) allows to synchronize computers to a time server. Enable this option, if you are providing a NTP server. You need the ntp or chrony package installed for this option to be useful.</description>
+        <port protocol="udp" port="123"/>
+    </service>
+
+    <service>
+        <short>MySQL</short>
+        <description>MySQL Database Server</description>
+        <port protocol="tcp" port="3306"/>
+    </service>
+
+    <service>
+        <short>SSH</short>
+        <description>Secure Shell (SSH) is a protocol for logging into and executing commands on remote machines. It provides secure encrypted communications. If you plan on accessing your machine remotely via SSH over a firewalled interface, enable this option. You need the openssh-server package installed for this option to be useful.</description>
+        <port protocol="tcp" port="22"/>
+    </service>
+    <service>
+        <short>squid</short>
+        <description>Squid HTTP proxy server</description>
+        <port protocol="tcp" port="3128"/>
+    </service>
+</services>

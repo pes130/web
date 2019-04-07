@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empinfo>
+    <nombre>TCKR Systems</nombre>
+    <forma_legal abbr="S.A.">Sociedad Anónima</forma_legal>
+    <fundacion>2021</fundacion>
+    <empleados>
+        <empleado id="1">
+            <nombre>Shōtarō Kaneda</nombre>
+            <puesto tecnologia="web" experiencia="3" tags="angular maven fullstack vue html css">Desarrollador</puesto>
+            <email>kaneda@nttdocomo.co.jp</email>
+            <telefonos>
+              <telefono>+81897236719</telefono>            
+            </telefonos>
+        </empleado>
+        <empleado id="2">
+            <nombre from="CA">Tetsuo Shima</nombre>
+            <puesto tecnologia="DBA" experiencia="2" tags="oracle mongodb mariadb mysql">DBA</puesto>
+            <email>tetsuo@nttdocomo.co.jp</email>
+            <telefonos>
+              <telefono>+81897212719</telefono>            
+            </telefonos>
+        </empleado>
+        <empleado id="3">
+            <nombre>Yamagata</nombre>
+            <puesto tecnologia="cisco" experiencia="1"  tags="cisco ios networking">Técnico de redes</puesto>
+            <email>yama@nttdocomo.co.jp</email>
+            <telefonos>
+              <telefono>+81123236719</telefono>            
+            </telefonos>
+        </empleado>
+        <empleado id="4">
+            <nombre>Motoko Kusanagi</nombre>
+            <puesto tecnologia="seguridad" experiencia="2"  tags="metasploit hacking auditoria">Experta en seguridad informática</puesto>
+            <email>motoko@section9.com</email>
+            <telefonos>
+              <telefono>+81897209719</telefono>            
+            </telefonos>
+        </empleado>
+        <empleado id="5">
+            <nombre>Daisuke Aramaki</nombre>
+            <puesto tecnologia="manager" experiencia="10"  tags="agile  jira scrum">Jefe de proyectos</puesto>
+            <email>aramaki@section9.com</email>
+            <telefonos>
+              <telefono>+81513236719</telefono>
+              <telefono>+81513236720</telefono>           
+            </telefonos>
+        </empleado>
+        <empleado id="6">
+            <nombre>Togusa</nombre>
+            <puesto tecnologia="devop" experiencia="1" tags="ansible oracle maven jenkins bamboo jira">Devops</puesto>
+            <email>togusa@section9.com</email>
+            <telefonos>
+              <telefono>+81845636719</telefono>
+              <telefono>+81845636835</telefono>            
+            </telefonos>
+        </empleado>
+    </empleados>
+</empinfo>

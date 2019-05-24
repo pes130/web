@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<got>
+    <casas>
+        <casa id="1" sobrevive="si" region="norte">
+            <nombre>Stark</nombre>
+            <blason>Lobo huargo</blason>
+            <asentamiento>Invernalia</asentamiento>
+            <lema>Se acerca el Invierno</lema>
+        </casa>
+        <casa id="2" sobrevive="si" region="oeste">
+            <nombre>Lannister</nombre>
+            <blason>Un león rampante de oro sobre campo de gules</blason>
+            <asentamiento>Roca Casterly</asentamiento>
+            <lema>¡Oye mi Rugido!</lema>
+        </casa>
+        <casa id="3" sobrevive="no" region="sureste">
+            <nombre>Baratheon</nombre>
+            <blason>Un venado coronado de sable sobre campo de oro</blason>
+            <asentamiento>Bastión de Tormentas</asentamiento>
+            <lema>Nuestra es la Furia</lema>
+        </casa>
+        <casa id="4" sobrevive="si" region="este">
+            <nombre>Targaryen</nombre>
+            <blason>Un dragón tricéfalo de gules en campo de sable</blason>
+            <asentamiento>Fortaleza Roja</asentamiento>
+            <lema>Fuego y Sangre</lema>
+        </casa>
+    </casas>
+    <personas>
+        <persona vivo="false" edad="36" casaid="1">
+                <nombre>Eddard Stark</nombre>
+                <sexo>hombre</sexo>
+                <alias>Ned</alias>
+                <titulos>
+                    <titulo>Señor de Invernalia</titulo>
+                    <titulo>Guardián del Norte</titulo>
+                    <titulo>Mano del Rey</titulo>
+                    <titulo>Protector del Reino</titulo>
+                </titulos>
+            </persona>
+            <persona vivo="false" edad="35" casaid="1">
+                <nombre>Catelyn Tully</nombre>
+                <sexo>mujer</sexo>
+                <alias>Cat</alias>
+                <titulos>
+                    <titulo>Señora de Invernalia</titulo>
+                </titulos>
+            </persona>
+            <persona vivo="true" edad="10" casaid="1">
+                <cabeza/>
+                <nombre>Brandon Stark</nombre>
+                <sexo>hombre</sexo>
+                <alias>Bran</alias>
+                <titulos>
+                    <titulo>Príncipe heredero de Invernalia</titulo>
+                </titulos>
+            </persona>
+            <persona vivo="true" edad="11" casaid="1">
+                <nombre>Arya Stark</nombre>
+                <sexo>mujer</sexo>
+                <alias>Nadie</alias>
+                <titulos>
+                    <titulo>Princesa de Invernalia</titulo>
+                </titulos>
+            </persona>
+            <persona vivo="true" edad="17" casaid="1">
+                <nombre>Jon Nieve</nombre>
+                <sexo>hombre</sexo>
+                <alias>El Bastardo de Invernalia</alias>
+                <titulos>
+                    <titulo>Lord Comandante de la Guardia de la Noche</titulo>
+                </titulos>
+            </persona>
+            <persona vivo="false" edad="58" casaid="2">
+                <nombre>Tywin Lannister</nombre>
+                <sexo>hombre</sexo>
+                <alias>El Viejo León</alias>
+                <titulos>
+                    <titulo>Señor de Roca Casterly</titulo>
+                    <titulo>Guardián del Occidente</titulo>
+                    <titulo>Mano del Rey</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="true" edad="34" casaid="2">
+                <nombre>Jaime Lannister</nombre>
+                <sexo>hombre</sexo>
+                <alias>Matarreyes</alias>
+                <titulos>
+                    <titulo>Lord Comandante de la Guardia Real</titulo>
+                    <titulo>Sir</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="true" edad="34" casaid="2">
+                <cabeza/>
+                <nombre>Cersei Lannister</nombre>
+                <sexo>mujer</sexo>
+                <alias>Luz del Occidente</alias>
+                <titulos>
+                    <titulo>Reina de los Siete Reinos</titulo>
+                    <titulo>Señora de Roca Casterly</titulo>
+                    <titulo>Protector del Reino</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="true" edad="27" casaid="2">
+                <nombre>Tyrion Lannister</nombre>
+                <sexo>hombre</sexo>
+                <alias>Gnomo</alias>
+                <titulos>
+                    <titulo>Mano del Rey</titulo>
+                    <titulo>Consejero de la Moneda</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="false" edad="14" casaid="3">
+                <nombre>Joffrey Baratheon</nombre>
+                <sexo>hombre</sexo>
+                <alias>Joffrey el Malnacido</alias>
+                <titulos>
+                    <titulo>Príncipe de los Siete Reinos</titulo>
+                    <titulo>Protector del Reino</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="false" edad="36" casaid="3">
+                <nombre>Robert Baratheon</nombre>
+                <sexo>hombre</sexo>
+                <alias>El Usurpador</alias>
+                <titulos>
+                    <titulo>Señor de Bastión de Tormentas</titulo>
+                    <titulo>Protector del Reino</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="false" edad="36" casaid="3">
+                <nombre>Stannis Baratheon</nombre>
+                <sexo>hombre</sexo>
+                <alias>Rey en el Muro</alias>
+                <titulos>
+                    <titulo>Señor de Rocadragón</titulo>
+                    <titulo>Rey de Poniente</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="true" edad="16" casaid="3">
+                <nombre>Gendry</nombre>
+                <sexo>hombre</sexo>
+                <alias>El Herrero</alias>
+                <titulos>
+                    <titulo>Herrero</titulo>
+                </titulos>
+            </persona> 
+            <persona vivo="true" edad="16" casaid="4">
+                <cabeza/>
+                <nombre>Daenerys Targaryen</nombre>
+                <sexo>mujer</sexo>
+                <alias>Madre de Dragones</alias>
+                <titulos>
+                    <titulo>Khaleesi de los Dothraki</titulo>
+                    <titulo>Princesa de Rocadragón</titulo>
+                    <titulo>Señora de los Siete Reinos</titulo>
+                    <titulo>Protector del Reino</titulo>
+                </titulos>
+            </persona> 
+
+            <persona vivo="false" edad="22" casaid="4">
+                <nombre>Viserys Targaryen</nombre>
+                <sexo>hombre</sexo>
+                <alias>El rey Mendigo</alias>
+                <titulos>
+                    <titulo>Rey de los Ándalos y los Rhoynar y los Primeros Hombres</titulo>
+                    <titulo>Protector del Reino</titulo>
+                </titulos>
+            </persona> 
+
+             <persona vivo="false" edad="102" casaid="4">
+                <nombre>Aemon Targaryen</nombre>
+                <sexo>hombre</sexo>
+                <alias>Tío maestre</alias>
+                <titulos>
+                    <titulo>Maestre de Castillo Negro</titulo>
+                    <titulo>Hermano juramentado de la Guardia de la Noche</titulo>
+                </titulos>
+            </persona>
+
+            <persona vivo="true" edad="17" casaid="4">
+                <nombre>Aegon Targaryen</nombre>
+                <sexo>hombre</sexo>
+                <alias>Aegon VI</alias>
+                <titulos>
+                    <titulo>Heredero</titulo>
+                </titulos>
+            </persona>
+    </personas>
+</got>
+
